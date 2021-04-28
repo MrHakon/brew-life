@@ -1,0 +1,31 @@
+<div>
+    <h2>{{dummyBrew.Name}}</h2>
+    <div class="beer-card-simple">
+        <div class="left-list">
+            <p>Description: {{dummyBrew.Description}}</p>
+            <p>Slogan: {{dummyBrew.Slogan}}</p>
+            <p>{{dummyBrew.Quantity}} liter</p>
+            <p>Yeast: {{dummyBrew.Yeast.Name}}</p>
+            <p>Mashing: {{dummyBrew.Mashing.DurationMinutes}} minutes on {{dummyBrew.Mashing.Degrees}} degress</p>
+            <p>Abv: {{dummyBrew.AlcoholByVolume}} %</p>
+        </div>
+    </div>
+
+    <div class="beer-card-simple">
+        <h3>Malts</h3>
+        <div *ngFor="let malt of dummyBrew.Malts" class="left-list">
+            {{malt.Name}} - {{malt.Quantity}} kg
+        </div>
+    </div>
+
+    <div class="beer-card-simple">
+        <h3>Hops</h3>
+        <div *ngFor="let hop of dummyBrew.Hops" class="left-list">
+            {{hop.Name}}
+            <!-- <div *ngFor="let hopDosage of hop.hopDosage">
+                <p>{{hopDosage.AmountGrams}} grams</p>
+                <p>{{hopDosage.DurationMinutes}} minutes</p>
+            </div> -->
+        </div>
+    </div>
+</div>

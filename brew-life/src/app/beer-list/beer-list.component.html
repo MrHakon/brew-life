@@ -1,0 +1,11 @@
+<div class="beer-list list">
+    <div class="beer-card-simple" *ngFor="let beer of beers" [routerLink]="['/beerdetails', beer.Id]">
+        <div>
+            <b>{{beer.Name}}</b>
+        </div>
+        <div>
+            {{beer.Slogan}}
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.left-list {
+    text-align: left;
+}
+
+.beer-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.beer-card-simple {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+html, body { 
+    height: 100%; 
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1 {
+    padding-top: 0.5em;
+}
