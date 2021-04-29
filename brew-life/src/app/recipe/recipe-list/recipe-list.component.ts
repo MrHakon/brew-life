@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BeerDummyDataService } from '../../beer-dummy-data.service';
+import { BeerDummyDataService } from '../../services/beer-dummy-data.service';
 import { BrewModel } from '../../models/BrewModel';
 
 @Component({
@@ -9,13 +9,12 @@ import { BrewModel } from '../../models/BrewModel';
 })
 export class RecipeListComponent implements OnInit {
 
-  beers: BrewModel[] = [];
+  recipe: BrewModel[] = [];
 
   constructor(private brewDummyService: BeerDummyDataService) { }
 
   ngOnInit(): void {
-    let dummyBeer = this.brewDummyService.GetDummyBrew();
-    this.beers.push(dummyBeer);
+    let dummyBrew = this.brewDummyService.GetDummyBrew();
+    this.recipe.push(dummyBrew);
   }
-
 }

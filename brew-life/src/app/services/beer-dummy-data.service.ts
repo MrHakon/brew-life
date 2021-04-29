@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BrewModel, HopDosage, HopSingleBrew, MaltSingleBrew, Mashing, Yeast } from './models/BrewModel';
+import { BrewModel, HopDosage, HopSingleBrew, MaltSingleBrew, Mashing, Yeast } from '../models/BrewModel';
 
 @Injectable({
   providedIn: 'root'

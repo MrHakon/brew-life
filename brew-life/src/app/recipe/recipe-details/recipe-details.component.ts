@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BeerDummyDataService } from '../../beer-dummy-data.service';
+import { BeerDummyDataService } from '../../services/beer-dummy-data.service';
 import { BrewModel } from '../../models/BrewModel';
 
 @Component({
@@ -21,5 +21,4 @@ export class RecipeDetailsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

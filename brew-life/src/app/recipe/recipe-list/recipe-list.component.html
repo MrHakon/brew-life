@@ -1,11 +1,10 @@
-<div class="beer-list list">
-    <div class="beer-card-simple" *ngFor="let beer of beers" [routerLink]="['/recipedetails', beer.Id]">
+<div class="general-list list">
+    <div class="card-simple" *ngFor="let recipe of recipe" [routerLink]="['/recipedetails', recipe.Id]">
         <div>
-            <b>{{beer.Name}}</b>
+            <b>{{recipe.Name}}</b>
         </div>
         <div>
-            {{beer.Slogan}}
+            {{recipe.Slogan}}
         </div>
-        
     </div>
 </div>

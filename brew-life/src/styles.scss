@@ -10,12 +10,20 @@
     text-align: left;
 }
 
-.beer-list {
+.card-no-background {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.general-list {
     display: flex;
     flex-direction: column;
 }
 
-.beer-card-simple {
+.card-simple {
     display: flex;
     flex-direction: column;
     flex: 1;
