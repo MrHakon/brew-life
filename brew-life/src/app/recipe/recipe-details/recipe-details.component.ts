@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BeerDummyDataService } from '../beer-dummy-data.service';
-import { BrewModel } from '../models/BrewModel';
+import { BeerDummyDataService } from '../../beer-dummy-data.service';
+import { BrewModel } from '../../models/BrewModel';
 
 @Component({
-  selector: 'app-beer-details',
-  templateUrl: './beer-details.component.html',
-  styleUrls: ['./beer-details.component.scss']
+  selector: 'app-recipe-details',
+  templateUrl: './recipe-details.component.html',
+  styleUrls: ['./recipe-details.component.scss']
 })
-export class BeerDetailsComponent implements OnInit {
+export class RecipeDetailsComponent implements OnInit {
 
   beerId: string;
   dummyBrew: BrewModel;

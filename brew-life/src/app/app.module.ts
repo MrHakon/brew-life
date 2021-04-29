@@ -3,18 +3,55 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BeerListComponent } from './beer-list/beer-list.component';
+import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material design
 import { MatIconModule } from '@angular/material/icon';
-import { BeerDetailsComponent } from './beer-details/beer-details.component';
+import { RecipeDetailsComponent } from './recipe/recipe-details/recipe-details.component';
+import { RecipeNewComponent } from './recipe/recipe-new/recipe-new.component';
+import { RecipeEditComponent } from './recipe/recipe-edit/recipe-edit.component';
+import { MaltListComponent } from './malt/malt-list/malt-list.component';
+import { MaltDetailsComponent } from './malt/malt-details/malt-details.component';
+import { MaltEditComponent } from './malt/malt-edit/malt-edit.component';
+import { MaltNewComponent } from './malt/malt-new/malt-new.component';
+import { HopListComponent } from './hop/hop-list/hop-list.component';
+import { HopDetailsComponent } from './hop/hop-details/hop-details.component';
+import { HopNewComponent } from './hop/hop-new/hop-new.component';
+import { HopEditComponent } from './hop/hop-edit/hop-edit.component';
+import { YeastListComponent } from './yeast/yeast-list/yeast-list.component';
+import { YeastDetailsComponent } from './yeast/yeast-details/yeast-details.component';
+import { YeastNewComponent } from './yeast/yeast-new/yeast-new.component';
+import { YeastEditComponent } from './yeast/yeast-edit/yeast-edit.component';
+import { BrewListComponent } from './brew/brew-list/brew-list.component';
+import { BrewDetailsComponent } from './brew/brew-details/brew-details.component';
+import { BrewNewComponent } from './brew/brew-new/brew-new.component';
+import { BrewEditComponent } from './brew/brew-edit/brew-edit.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BeerListComponent,
-    BeerDetailsComponent
+    RecipeListComponent,
+    RecipeDetailsComponent,
+    RecipeNewComponent,
+    RecipeEditComponent,
+    MaltListComponent,
+    MaltDetailsComponent,
+    MaltEditComponent,
+    MaltNewComponent,
+    HopListComponent,
+    HopDetailsComponent,
+    HopNewComponent,
+    HopEditComponent,
+    YeastListComponent,
+    YeastDetailsComponent,
+    YeastNewComponent,
+    YeastEditComponent,
+    BrewListComponent,
+    BrewDetailsComponent,
+    BrewNewComponent,
+    BrewEditComponent,
   ],
   imports: [
     BrowserModule,
