@@ -27,6 +27,8 @@ import { BrewListComponent } from './brew/brew-list/brew-list.component';
 import { BrewDetailsComponent } from './brew/brew-details/brew-details.component';
 import { BrewNewComponent } from './brew/brew-new/brew-new.component';
 import { BrewEditComponent } from './brew/brew-edit/brew-edit.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -57,7 +59,13 @@ import { BrewEditComponent } from './brew/brew-edit/brew-edit.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
